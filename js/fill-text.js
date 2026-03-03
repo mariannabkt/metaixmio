@@ -23,7 +23,7 @@ let tl = gsap.timeline({
   scrollTrigger: {
     trigger: diagonal_section,
     start: "top top",
-    end: "+=1200",
+    end: "+=1000",
     scrub: true,
     pin: true
   }
@@ -38,7 +38,7 @@ tl.to(diagonal_shape, {
 
 // Reveal image inside
 tl.to(inside, {
-  x: "100%",
+  x: "30%",
   ease: "none",
   duration: 1
 });
