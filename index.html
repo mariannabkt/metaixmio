@@ -412,7 +412,7 @@
         </div>
         <div class="artist-card card">
             <img src="styles/assets/artists/artist2.png">
-            <h2 class="what-name">Antigoni Vafeiadi</h2> 
+            <h2 class="what-name">Antigoni <br>Vafeiadi</h2> 
             <h2 class="what-job">Artist</h2>             
             <button class="blur-btn" data-who="Gallery" data-bio="Στην έκθεση «Έρως και Ψυχή», η Αντιγόνη Βαφειάδη δημιουργεί μια βιωματική διαδρομή μεταμόρφωσης μέσα από βιομορφικά κουκούλια από μετάξι και φυσικές βαφές. Τα έργα της λειτουργούν ως γέφυρα ανάμεσα στο σκοτάδι και το φως, την επιθυμία και την πληρότητα, προτείνοντας μια συνύπαρξη ύλης και πνεύματος που προκαλεί τον θεατή να αναμετρηθεί με τις δικές του εσωτερικές αλλαγές.">
                 Read bio
@@ -436,6 +436,16 @@
         </div>
     </section>
 
+    <section class="panel">
+        <h2 class="what-title">Panel</h2>
+        <section class="diagonal-section">
+        <div class="shape-wrapper">
+            <div class="diagonal-shape">
+            <img src="styles/assets/panel/panel1.png" class="person-img" />
+            </div>
+        </div>
+        </section>
+    </section>
 
 
     <footer>
@@ -489,25 +499,7 @@
     <script src="js/calendar-btn.js"></script>
     <script src="js/blob.js"></script>
     <script src="js/pop-up.js"></script>
-
-    <script>
-        const toggleLinks = document.querySelectorAll(".toggle-bio");
-
-        toggleLinks.forEach(link => {
-            link.addEventListener("click", function(event) {
-                event.preventDefault();
-                
-                const speakerCard = link.closest(".speaker-card");
-                speakerCard.classList.toggle("active");
-
-                if (speakerCard.classList.contains("active")) {
-                    link.textContent = "Close Bio";
-                } else {
-                    link.textContent = "Read Bio";
-                }
-            });
-        });
-    </script>
+    <script src="js/read-bio.js"></script>
 </body>
 
 </html>
