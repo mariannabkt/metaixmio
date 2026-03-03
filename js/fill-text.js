@@ -14,3 +14,31 @@ if (target && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     }
   });
 }
+
+const diagonal_section = document.querySelector(".diagonal-section");
+const diagonal_shape = document.querySelector(".diagonal-shape");
+const inside = document.querySelector(".person-img");
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: diagonal_section,
+    start: "top top",
+    end: "+=1200",
+    scrub: true,
+    pin: true
+  }
+});
+
+// Move "\" shape to center
+tl.to(diagonal_shape, {
+  x: "60vw",
+  ease: "none",
+  duration: 1
+});
+
+// Reveal image inside
+tl.to(inside, {
+  x: "100%",
+  ease: "none",
+  duration: 1
+});

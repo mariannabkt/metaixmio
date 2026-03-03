@@ -399,11 +399,64 @@ video {
     position: relative;
     max-width: 320px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .artist-card img {
     position: relative;
     width: 100%;
+}
+
+.panel {
+    z-index: 5;
+    background-color: black;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    gap: 20px;
+    padding: 5vh;
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+.diagonal-section {
+  height: 200vh; 
+  position: relative;
+}
+
+.shape-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.diagonal-shape {
+    position: relative;
+    left: -60vw; /* start off screen */
+    width: 50vw;
+    height: 400px;
+    background: rgb(139, 27, 27);
+
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+
+    transform: skewX(34deg);
+    transform-origin: left center;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.person-img {
+  height: 100%;
+  object-fit: cover;
+  transform: skewX(-34deg) translateX(-100%);
 }
 
 /* Media Queries for Tablet and Mobile */
