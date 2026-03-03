@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="manifest" href="manifest.json">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Metaixmio - TEDxAUEB 2026">
+    <meta name="author" content="TEDxAUEB">
+    <title>Metaixmio - TEDxAUEB 2026</title>
+    <link rel="icon" type="image/png" href="styles/favicon/TEDx.svg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/gradient.css">
+    <link rel="stylesheet" href="styles/metaixmiostyles.css">
+
+    <!-- Font Awesome CDN link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="js/header.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+    <div class="root">
+        <div class="main-container">
+            <header class="head">
+                <a target="_blank" href="https://tedxaueb.org/">
+                    <img class="logo" src="styles/logo/TEDxAUEB_Logo.png" alt="TEDxAUEB Logo" style="display: block;">
+                </a>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="https://tedxaueb.org/">Home</a></li>
+                        <li><a href="https://tedxaueb.org/about.html">About</a></li>
+                        <li><a href="https://tedxaueb.org/history.html">Events</a></li>
+                        <li><a href="https://tedxaueb.org/team.html">Team</a></li>
+                        <li><a href="https://tedxaueb.org/talks.html">Talks</a></li>
+                        <li><a href="https://blog.tedxaueb.org">Blog</a></li>
+                        <li><a href="https://metaixmio.tedxaueb.org">Metaixmio</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="overlay-menu" id="overlayMenu">
+        <div class="overlay-header">
+            <div class="close-btn" id="closeBtn"></div>
+        </div>
+        <nav class="overlay-nav">
+            <ul>
+                <li><a href="https://tedxaueb.org/">Home</a></li>
+                <li><a href="https://tedxaueb.org/about.html">About</a></li>
+                <li><a href="https://tedxaueb.org/history.html">Events</a></li>
+                <li><a href="https://tedxaueb.org/team.html">Team</a></li>
+                <li><a href="https://tedxaueb.org/talks.html">Talks</a></li>
+                <li><a href="https://blog.tedxaueb.org">Blog</a></li>
+                <li><a href="https://metaixmio.tedxaueb.org">Metaixmio</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="hero">
+        <div class="hero-logo"></div>
+        <div class="hero-aside">
+            <h2>Τεχνόπολη Δήμου Αθηναίων</h2>
+            <h2>7 Μαρτίου 2026</h2>
+            <button class="blur-btn">
+                <a href="https://www.ticketplus.gr/event/tedxaueb-2026-metaichmio/" target="_blank">Get Your Tickets</a>
+            </button>
+            <button class="blur-btn" id="calendarBtn">
+                Add to calendar
+            </button>
+        </div>
+        <svg class="arrow" width="42px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 3L12 21M12 21L18 15M12 21L6 15" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </section>
+
+    <section class="hero description">
+        <div class="hero-icon"></div>
+        <p class="fill-text js-fill"><span><strong>ΜΕΤΑΙΧΜΙΟ</strong>
+        <br><br>{μετά + αιχμή}
+        <br><br>“Το κατώφλι μεταξύ δύο κόσμων. Το οριακό σημείο μεταξύ δύο αιχμών”
+        <br><br>Το «Μεταίχμιο» είναι ο ενδιάμεσος χώρος· το σημείο όπου το παρελθόν συναντά το μέλλον και η βεβαιότητα μετατρέπεται σε ερώτημα. Είναι η στιγμή πριν την απόφαση, το όριο ανάμεσα στη στασιμότητα και τη μεταμόρφωση. Σε έναν κόσμο διαρκών αλλαγών, τα μεταίχμια αποτελούν αναπόσπαστο μέρος της ανθρώπινης εμπειρίας. Το TEDxAUEB 2026 εστιάζει στις καθοριστικές αυτές καμπές. 
+        <br><br>Πώς διαμορφώνεται η ταυτότητά μας όταν βρισκόμαστε ανάμεσα στο γνώριμο και το άγνωστο;
+        <br><br>Τι μας ωθεί να κάνουμε το επόμενο βήμα;
+        <br><br>Πώς οι μεταβατικές στιγμές μπορούν να λειτουργήσουν ως αφετηρία εξέλιξης, δημιουργίας και ουσιαστικής αλλαγής;
+        <br><br>Το TEDxAUEB επιστρέφει για δέκατη τέταρτη χρονιά, συνεχίζοντας να φέρνει στο παρασκήνιο ιδέες που αλλάζουν τα πάντα. Το Σάββατο 7 Μαρτίου 2026, στην Τεχνόπολη Δήμου Αθηναίων, το «Μεταίχμιο» προσκαλεί το κοινό να το εξερευνήσει και να επαναπροσδιορίσει τη σχέση του με την αλλαγή, την πρόοδο και τον ίδιο του τον εαυτό.
+        </span></p>
+        <button class="blur-btn">
+            <a id="trailerBtn">Trailer</a>
+        </button>
+        <div id="trailerModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <video id="trailerVideo" controls>
+                <source src="styles/assets/metaixmio-trailer.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>    
+
+    <div class="host-title">
+        <h2 class="what-title">Backstage Host</h2>
+    </div>
+    <section class="host" id="host-section">
+        <div class="host-title card">
+            <h2 class="what-name">Marios Arapis</h2> 
+            <h2 class="what-job">Content Creator</h2> 
+            <button class="blur-btn" data-who="Backstage Host" data-bio="Από τη Λέρο και τα εργαστήρια της Γεωπονικής του ΑΠΘ, ο Μάριος ξέρει καλά τι σημαίνει δουλειά, έχοντας μπει στον χώρο της εστίασης από τα 14 του χρόνια. Όμως, το δικό του προσωπικό “Μεταίχμιο” ήρθε όταν τόλμησε να αφήσει την ασφάλεια της εστίασης, για να ακολουθήσει αυτό που πραγματικά τον εξέφραζε: τον κόσμο των Social Media. Μια μετάβαση που τον δικαίωσε, επιτρέποντάς του να μοιράζεται τις γνώσεις και τις εμπειρίες του ψηφιακά. 
+            Με διαχρονικό στήριγμα τη μητέρα του σε κάθε του βήμα, 
+            έρχεται στις 7 Μαρτίου για να μας δείξει όλα όσα δεν βλέπουν οι κάμερες της σκηνής.">
+                Read bio
+            </button>
+        </div>
+        <canvas id="canvas"></canvas>
+    </section>
+
+    <div id="bio-popUp" class="popUp">
+        <div class="popUp-content">
+            <span class="close-popUp">&times;</span>
+            <h3 class="what-title" id="popUp-title"></h3>
+            <h3 class="what-name" id="popUp-name"></h3>
+            <h3 class="what-job" id="popUp-job"></h3>
+            <p id="popUp-bio"></p>
+        </div>
+    </div>
+
+    <div class="host-title">
+        <h2 class="what-title">Speakers</h2>
+    </div>
+    <section class="speakers-section">
+        <div class="filler"></div>
+        <div class="speaker-card">
+            <div class="speaker-visual">
+                <img src="styles/assets/speakers/circle.png" class="shape shape-top">
+                <img src="styles/assets/speakers/speaker1.png" class="speaker">
+                <img src="styles/assets/speakers/circle-bottom.png" class="shape shape-bottom">
+            </div>
+            <div class="details">
+                <h2 class="what-name">Sotirios Zarogiannis</h2> 
+                <h2 class="what-job">Professor of Physiology, chair of dept. of physiology faculty of medicine, UTh</h2> 
+                <a class="toggle-bio">View Bio</a>
+                <div class="bio">
+                    <p>Με χαρά υποδεχόμαστε στο TEDxAUEB τον Σωτήρη Ζαρογιάννη, Καθηγητή Φυσιολογίας στο Πανεπιστήμιο Θεσσαλίας και διεθνώς αναγνωρισμένο ερευνητή.
+                    Με εμπειρία από κορυφαία ιδρύματα όπως το University of California San Francisco, το University of Alabama και το University of Heidelberg, 
+                    το έργο του εξερευνά τη φυσιολογία των μεσοθηλιακών μεμβρανών, τις επιδράσεις περιβαλλοντικών ρύπων στην αναπνευστική υγεία και τη διεπιστημονική σύνδεση επιστήμης, 
+                    τεχνολογίας και κοινωνίας.
+                    Στη σκηνή του TEDxAUEB μας προσκαλεί σε ένα ταξίδι στο μεταίχμιο της Φυσιολογίας, 
+                    από αυτό που νομίζαμε ότι ξέραμε για το ανθρώπινο σώμα σε αυτό που μόλις αρχίζουμε να φανταζόμαστε.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="filler"></div>
+        <div class="speaker-card">
+            <div class="speaker-visual">
+                <img src="styles/assets/speakers/circle.png" class="shape shape-top">
+                <img src="styles/assets/speakers/speaker2.png" class="speaker">
+                <img src="styles/assets/speakers/circle-bottom.png" class="shape shape-bottom">
+            </div>
+            <div class="details">
+                <h2 class="what-name">George Grammatidis</h2> 
+                <h2 class="what-job">CCO of ERLAC</h2> 
+                <a class="toggle-bio">View Bio</a>
+                <div class="bio">
+                    <p>Ως Chief Communications Officer στην ERLAC και διακεκριμένος στη λίστα Forbes 30 Under 30, 
+                        ο Γιώργος Γραμματίδης διαθέτει εμπειρία από την Ελλάδα και τις ΗΠΑ στον χώρο της καινοτομίας και των startups, 
+                        έχοντας αφιερώσει την καριέρα του στη στρατηγική επικοινωνία
+                        και τη δημιουργία ισχυρών διεθνών συνεργασιών.
+                        Σήμερα συμμετέχει ενεργά στη στρατηγική ανάπτυξη και το branding της ιστορικήςοικογενειακής βιομηχανίας βερνικιών και χρωμάτων, 
+                        με έμφαση στην καινοτομία και τη σύγχρονη επιχειρηματικότητα, ενώ παράλληλα συμβάλλει ενεργά στην ανάπτυξη του κλάδου ως Γενικός Γραμματέας στον Σύνδεσμο Βιομηχανιών Χρωμάτων 
+                        και μέλος της Επιτροπής Ηγεσίας του Ελληνοαμερικανικού Επιμελητηρίου.
+                        Στις 7 Μαρτίου, θα μας εμπνεύσει να δούμε το “μεταίχμιο” της ηλικίας μας όχι ως εμπόδιο, 
+                        αλλά ως το απόλυτο ανταγωνιστικό μας πλεονέκτημα.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="filler"></div>
+        <div class="speaker-card">
+            <div class="speaker-visual">
+                <img src="styles/assets/speakers/circle.png" class="shape shape-top">
+                <img src="styles/assets/speakers/speaker3.png" class="speaker">
+                <img src="styles/assets/speakers/circle-bottom.png" class="shape shape-bottom">
+            </div>
+            <div class="details">
+                <h2 class="what-name">Chrystos Kyriakidis</h2> 
+                <h2 class="what-job">Physicist, author and educational contect creator</h2> 
+                <a class="toggle-bio">View Bio</a>
+                <div class="bio">
+                    <p>Ως Φυσικός, συγγραφέας και δημιουργός του δημοφιλούς καναλιού «It’s Just Physics» με εκατομμύρια προβολές, 
+                        καθώς και παρουσιαστής της εκπομπής “Ανακαλύπτοντας τον Κόσμο” στην ΕΡΤ, 
+                        ο Χρήστος Κυριακίδης έχει αφιερώσει την καριέρα του στην επικοινωνία της επιστήμης, 
+                        μετατρέποντας τη φυσική από μάθημα σε συναρπαστικό τρόπο σκέψης.
+                        Μέσα από τη δράση του, ως ιδρυτής του πρώτου εργαστηρίου επιστημών στη Δράμα αλλά και μέσω των εκπαιδευτικών του δράσεων, 
+                        επιδιώκει να κάνει τη γνώση βιωματική και προσιτή σε όλους, 
+                        γεφυρώνοντας το χάσμα μεταξύ της ακαδημαϊκής θεωρίας και της καθημερινής εμπειρίας.
+                        Στις 7 Μαρτίου, θα ανέβει στη σκηνή του TEDxAUEB για να μας ξεναγήσει στο παράδοξο σύμπαν της κβαντικής φυσικής 
+                        και να μας αποδείξει πώς η αβεβαιότητα του μικρόκοσμου δεν είναι εμπόδιο, 
+                        αλλά η ίδια η αρχή της ύπαρξης και της ανθρώπινης πιθανότητας.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="filler"></div>
+        <div class="speaker-card">
+            <div class="speaker-visual">
+                <img src="styles/assets/speakers/circle.png" class="shape shape-top">
+                <img src="styles/assets/speakers/speaker4.png" class="speaker">
+                <img src="styles/assets/speakers/circle-bottom.png" class="shape shape-bottom">
+            </div>
+            <div class="details">
+                <h2 class="what-name">George Drosopoulos</h2> 
+                <h2 class="what-job">Conservation officer, Hellic ornithollogical society (BirdLife Greec)</h2> 
+                <a class="toggle-bio">View Bio</a>
+                <div class="bio">
+                    <p>Ως Υπεύθυνος Δράσεων Διατήρησης στην Ελληνική Ορνιθολογική Εταιρεία, 
+                        με σπουδές στη Βιολογία και εξειδίκευση στη συμπεριφορά ζώων, 
+                        ο Γιώργος Δροσόπουλος έχει αφιερώσει την ακαδημαϊκή και 
+                        επαγγελματική του πορεία στην αποκωδικοποίηση της σχέσης των ζώων με το περιβάλλον τους.
+                        Μέσα από τη δράση του, μετατρέπει τη θεωρία της συμπεριφορικής οικολογίας σε πράξη, 
+                        υλοποιώντας πανευρωπαϊκά προγράμματα για την προστασία των πουλιών και των πολύτιμων βιοτόπων τους.
+                        Στις 7 Μαρτίου, έρχεται για να μας ταξιδέψει στο «Μεταίχμιο» της φύσης και να μας εξηγήσει πώς 
+                        η κατανόηση της συμπεριφοράς των άλλων ειδών είναι το κλειδί για τη δική μας συνύπαρξη με τον πλανήτη.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="filler"></div>
+        <div class="speaker-card">
+            <div class="speaker-visual">
+                <img src="styles/assets/speakers/circle.png" class="shape shape-top">
+                <img src="styles/assets/speakers/speaker5.png" class="speaker">
+                <img src="styles/assets/speakers/circle-bottom.png" class="shape shape-bottom">
+            </div>
+            <div class="details">
+                <h2 class="what-name">Persa Koumoutsi</h2> 
+                <h2 class="what-job">Writer and translator of Arabic and English literature</h2> 
+                <a class="toggle-bio">View Bio</a>
+                <div class="bio">
+                    <p>Γεννημένη στο Κάιρο, η Πέρσα Κουμούτση έχει αφιερώσει τη ζωή της στη λογοτεχνική μετάφραση και τη συγγραφή, 
+                        λειτουργώντας ως ζωντανή γέφυρα ανάμεσα στην ελληνική και την αραβική κουλτούρα. 
+                        Με το έργο της, που περιλαμβάνει τη μετάφραση του νομπελίστα Naguib Mahfouz και πλήθος διεθνών διακρίσεων, 
+                        από τον Έπαινο της Ακαδημίας Αθηνών έως την πρόσφατη παρασημοφόρηση της από την Παλαιστινιακή Αρχή, 
+                        αποδεικνύει πως η γλώσσα δεν γνωρίζει σύνορα.
+                        Μέσα από πρωτοβουλίες της που προάγουν τη σχέση ανάμεσα στην Ελληνική και Αραβική Λογοτεχνία, 
+                        αλλά και με τη διδακτική της εμπειρία, μετατρέπει τη λογοτεχνία σε εργαλείο κατανόησης του «Άλλου», 
+                        καταρρίπτοντας στερεότυπα και χτίζοντας ουσιαστικό διαπολιτισμικό διάλογο.
+                        Εκείνο το λεπτό σημείο συνάντησης Δύσης και Ανατολής, 
+                        είναι το “Μεταίχμιο” που θα φέρει στην σκηνή του TEDxAUEB 2026 στις 7 Μαρτίου, 
+                        όπου οι λέξεις χάνουν την εθνικότητά τους και γίνονται πανανθρώπινες, 
+                        αποκαλύπτοντας τη δύναμη της μετάφρασης να ενώνει λαούς και ψυχές.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="filler"></div>
+        <div class="speaker-card">
+            <div class="speaker-visual">
+                <img src="styles/assets/speakers/circle.png" class="shape shape-top">
+                <img src="styles/assets/speakers/speaker6.png" class="speaker">
+                <img src="styles/assets/speakers/circle-bottom.png" class="shape shape-bottom">
+            </div>
+            <div class="details">
+                <h2 class="what-name">Grigoris Skoularikis</h2> 
+                <h2 class="what-job">Director of Running News</h2> 
+                <a class="toggle-bio">View Bio</a>
+                <div class="bio">
+                    <p>
+                    Ως Διπλωματούχος Ηλεκτρολόγος Μηχανικός και Μηχανικός Η/Υ του ΕΜΠ με ειδίκευση στη Βιοϊατρική, ο Γρηγόρης συνδυάζει την επιστημονική κατάρτιση με το επιχειρηματικό πνεύμα. Είναι ο άνθρωπος πίσω από την πρωτοπόρα ιστοσελίδα «RunningNews.gr», καθώς και ιδρυτής των εταιρειών RUNAWAY, WERUN και athletin.gr, υπηρετώντας τον χώρο του αθλητισμού σε κάθε του έκφανση.
+                    Το αθλητικό του ταξίδι είναι πολύ εντυπωσιακό: υπήρξε πρωταθλητής δρόμων αντοχής και διεθνής αθλητής σε Τρίαθλο και Δίαθλο, με συμμετοχές σε Παγκόσμια και Πανευρωπαϊκά Πρωταθλήματα. Ωστόσο, τα τελευταία χρόνια, το πιο σημαντικό του ρεκόρ γράφεται σε έναν άλλο στίβο: αυτόν της συμπερίληψης. Μέσα από τη σταθερή του παρουσία σε αγώνες δρόμου δίπλα στην κόρη του Αγγελική, η οποία έχει σύνδρομο Down, αναδεικνύει έμπρακτα τη δύναμη της ισότιμης συμμετοχής και της αποδοχής.
+                    Στις 7 Μαρτίου, έρχεται για να διανύσει μαζί μας το δικό του «Μεταίχμιο»: εκείνο το κρίσιμο σημείο όπου η ατομική επίδοση του πρωταθλητή δίνει τη θέση της στη συλλογική ευθύνη και η γραμμή του τερματισμού γίνεται η αφετηρία για μια κοινωνία χωρίς αποκλεισμούς.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="filler"></div>
+        <div class="speaker-card">
+            <div class="speaker-visual">
+                <img src="styles/assets/speakers/circle.png" class="shape shape-top">
+                <img src="styles/assets/speakers/speaker7.png" class="speaker">
+                <img src="styles/assets/speakers/circle-bottom.png" class="shape shape-bottom">
+            </div>
+            <div class="details">
+                <h2 class="what-name">Spyros Staridas</h2> 
+                <h2 class="what-job">Cartographer</h2> 
+                <a class="toggle-bio">View Bio</a>
+                <div class="bio">
+                    <p>
+                    Ως πολυβραβευμένος χαρτογράφος με σπουδές στις γεωεπιστήμες και τις εφαρμοσμένες τέχνες, ο Σπύρος Σταρίδας έχει αφιερώσει την πορεία του στην απόλυτη ισορροπία μεταξύ δεδομένων και εικόνας. Από το 2006, μέσα από το δικό του δημιουργικό γραφείο, μετατρέπει τα γεωγραφικά συστήματα πληροφοριών σε έργα υψηλής αισθητικής και ακρίβειας.
+                    Η αγάπη του για το αντικείμενο δεν σταματά στον σχεδιασμό, τη μεταλαμπαδεύει ως δάσκαλος της θεωρίας των χαρτών, αλλά και ως επιμελητής σε χαρτογραφικά περιοδικά παγκόσμιας εμβέλειας.
+                    Θα μας οδηγήσει λοιπόν ως προς το ταξίδι, για το δικό του “Μεταίχμιο”: το σημείο όπου η αντικειμενική πραγματικότητα συναντά την απεριόριστη φαντασία. Έρχεται για να μας αποκαλύψει πόση φαντασία κρύβεται τελικά μέσα στους χάρτες που χρησιμοποιούμε, αποδεικνύοντας πως ένας χάρτης δεν αποτυπώνει απλώς τον κόσμο!</p>
+                </div>
+            </div>
+        </div>
+        <div class="filler"></div>
+        <div class="speaker-card">
+            <div class="speaker-visual">
+                <img src="styles/assets/speakers/circle.png" class="shape shape-top">
+                <img src="styles/assets/speakers/speaker8.png" class="speaker">
+                <img src="styles/assets/speakers/circle-bottom.png" class="shape shape-bottom">
+            </div>
+            <div class="details">
+                <h2 class="what-name">Iason Stamakidis</h2> 
+                <h2 class="what-job">Motivational Speaker</h2> 
+                <a class="toggle-bio">View Bio</a>
+                <div class="bio">
+                    <p>
+                    Στα 16 του χρόνια, ως αθλητής της Εθνικής Ομάδας Waterpolo της Ελβετίας, ο χρόνος σταμάτησε απότομα. Μια εγκεφαλική αιμορραγία κατά τη διάρκεια της προπόνησης του προκάλεσε ημιπληγία στην δεξιά πλευρά και απώλεια ομιλίας. Οι γιατροί μίλησαν για καιρό στο αμαξίδιο. Εκείνος όμως είχε άλλη άποψη.
+                    Μέσα σε μόλις 5 μήνες, ο Ιάσων στάθηκε ξανά στα πόδια του. Χρειάστηκε να μάθει τα πάντα από το μηδέν: να μιλάει, να γράφει, να περπατάει. Να ζει από την αρχή.
+                    Σήμερα, 10 χρόνια μετά, σπουδάζει Κοινωνικός Λειτουργός και γυρίζει τον κόσμο ως motivational speaker, μετατρέποντας το προσωπικό του βίωμα σε δύναμη για τους άλλους.
+                    Στις 7 Μαρτίου, έρχεται για να μας περιγράψει το δικό του, απόλυτο «Μεταίχμιο»:εκείνο το σημείο όπου η ιατρική γνωμάτευση σταματά και αναλαμβάνει η ψυχική δύναμη,
+                    μετατρέποντας το “τέλος” σε μια νέα, συναρπαστική αρχή.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="filler"></div>
+        <div class="speaker-card">
+            <div class="speaker-visual">
+                <img src="styles/assets/speakers/circle.png" class="shape shape-top">
+                <img src="styles/assets/speakers/speaker9.png" class="speaker">
+                <img src="styles/assets/speakers/circle-bottom.png" class="shape shape-bottom">
+            </div>
+            <div class="details">
+                <h2 class="what-name">Vicky Miha</h2> 
+                <h2 class="what-job">Film producer, founder of asterisk*</h2> 
+                <a class="toggle-bio">View Bio</a>
+                <div class="bio">
+                    <p>
+                    Ως ιδρύτρια της asterisk* και καταξιωμένη παραγωγός, η Βίκυ Μίχα έχει αφιερώσει την τελευταία δεκαπενταετία στη δημιουργία γεφυρών μεταξύ της Ελλάδας και της Ευρώπης.
+                    Έχοντας στο βιογραφικό της εμβληματικούς τίτλους που έχουν παρουσιαστεί στα φεστιβάλ της Βενετίας, των Καννών και του Βερολίνου, βρίσκεται διαρκώς στην πρώτη γραμμή της ευρωπαϊκής κινηματογραφικής δημιουργίας.
+                    Η πορεία της, που ξεκίνησε από τη δημοσιογραφία και πέρασε από το Ηνωμένο Βασίλειο, τη Σουηδία, την οδήγησε στα μεγαλύτερα φεστιβάλ του κόσμου, εκπροσωπώντας επάξια την ελληνική παραγωγή.
+                    Στο TEDxAUEB 2026, ανεβαίνει στη σκηνή για να μας ξεναγήσει στο δικό της “Μεταίχμιο”: εκείνο το κρίσιμο σημείο ανάμεσα στην αρχαία κληρονομιά και τη σύγχρονη ταυτότητα, αποκαλύπτοντας πώς ο κινηματογράφος δεν είναι απλώς τέχνη, αλλά το πιο ισχυρό εργαλείο soft power που διαθέτουμε για να πούμε στον κόσμο ποιοι πραγματικά είμαστε.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="filler"></div>
+        <div class="speaker-card">
+            <div class="speaker-visual">
+                <img src="styles/assets/speakers/circle.png" class="shape shape-top">
+                <img src="styles/assets/speakers/speaker10.png" class="speaker">
+                <img src="styles/assets/speakers/circle-bottom.png" class="shape shape-bottom">
+            </div>
+            <div class="details">
+                <h2 class="what-name">Yiorgos Eleftheriades</h2> 
+                <h2 class="what-job">Designer</h2> 
+                <a class="toggle-bio">View Bio</a>
+                <div class="bio">
+                    <p>
+                    Η ιστορία του ξεκινά το 1992, όταν ίδρυσε το επώνυμο brand του, μετατρέποντας το ατελιέ του στο κέντρο της Αθήνας σε εφαλτήριο για μια διεθνή καριέρα. Με ορόσημο το ντεμπούτο του στο Tranoï Paris το 2000, οι συλλογές του ταξίδεψαν στις μεγαλύτερες πόλεις της μόδας,από το Παρίσι και το Μιλάνο μέχρι τη Βαρκελώνη, κατακτώντας μερικά από τα σημαντικότερα καταστήματα στον κόσμο.
+                    Το δημιουργικό του αποτύπωμα έχει υμνηθεί από τη «βίβλο» της μόδας, φιλοξενούμενο σε σελίδες της Vogue, του Harper’s Bazaar, του Dazed & Confused, του Numéro Homme, του ELLE και του Citizen K.
+                    Κάθε του δημιουργία είναι μια σπουδή στην ισορροπία: εκεί που η αρχιτεκτονική ακρίβεια συναντά την καλλιτεχνική έκφραση. Όμως, η πραγματική του καινοτομία βρίσκεται αλλού. Για περισσότερες από δύο δεκαετίες, ο Γιώργος Ελευθεριάδης υπήρξε πρωτοπόρος της «συνειδητής πολυτέλειας», εφαρμόζοντας πρακτικές βιωσιμότητας πολύ πριν αυτές γίνουν επιτακτική ανάγκη για τη βιομηχανία.
+                    Στις 7 Μαρτίου, έρχεται για να ορίσει το δικό του «Μεταίχμιο»: το σημείο όπου η αισθητική συναντά την ηθική και την βιωσιμότητα και το παρόν σχεδιάζει το μέλλον.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="filler"></div>
+        <div class="speaker-card">
+            <div class="speaker-visual">
+                <img src="styles/assets/speakers/circle.png" class="shape shape-top">
+                <img src="styles/assets/speakers/speaker11.png" class="speaker">
+                <img src="styles/assets/speakers/circle-bottom.png" class="shape shape-bottom">
+            </div>
+            <div class="details">
+                <h2 class="what-name">Patrikios Kostis</h2> 
+                <h2 class="what-job">Actor & Teacher</h2> 
+                <a class="toggle-bio">View Bio</a>
+                <div class="bio">
+                    <p>
+                    Βρισκόμενος ανάμεσα στη θεατρική σκηνή και τη σχολική αίθουσα, ο Πατρίκιος συνδυάζει δύο κόσμους φαινομενικά διαφορετικούς αλλά ουσιαστικά αλληλένδετους.
+                    Απόφοιτος της Δραματικής Σχολής Βεάκη και αριστούχος του Παιδαγωγικού Τμήματος, με μεταπτυχιακή ειδίκευση στην Κοινωνική Νευροεπιστήμη Κοινωνική Παιδαγωγική και Εκπαίδευση, έχει αναγάγει τη διδασκαλία σε τέχνη και την τέχνη σε εργαλείο μάθησης.
+                    Σήμερα, ως δάσκαλος στο Αμερικανικό Κολλέγιο Ελλάδος, αλλά και με πλούσια εμπειρία στην τηλεόραση και το σινεμά, γνωρίζει καλύτερα από τον καθένα πώς να κερδίζει το πιο απαιτητικό κοινό: τα παιδιά.
+                    Στις 7 Μαρτίου, έρχεται για να μας ταξιδέψει στο δικό του “Μεταίχμιο”: εκείνο το δημιουργικό σημείο όπου η αυστηρότητα της επιστήμης λιώνει μέσα στη χαρά του παιχνιδιού και η εκπαίδευση συναντά την ελευθερία της έκφρασης, θυμίζοντάς μας πως η μάθηση είναι, πάνω απ’ όλα, βίωμα.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="filler"></div>
+    </section>
+    
+    <div class="gallery-title">
+        <h2>Gallery</h2>
+    </div>
+    <section class="gallery">
+        <div class="artist-card card">
+            <img src="styles/assets/artists/artist1.png">
+            <h2 class="what-name">Hara Athanasopoulou</h2> 
+            <h2 class="what-job">Artist</h2>             
+            <button class="blur-btn" data-who="Gallery" data-bio="Η Χαρά Αθανασοπούλου είναι μια πολυδιάστατη καλλιτέχνιδα που κινείται ανάμεσα στην υφαντική, το σχέδιο, τη γλυπτική και την καλλιτεχνική έρευνα. Αποφοίτησε από τη Σχολή Καλών Τεχνών Royal Academy of Arts της Χάγης και υπήρξε η μοναδική αποδέκτρια του Βραβείου Jan Roede για το 2024. Το έργο της αναδεικνύει τις πολυεπίπεδες πλευρές της γυναικείας φύσης, της ανθεκτικότητας και της συλλογικής μνήμης που είναι υφασμένες μέσα στον ιστό κάθε έργου. Μέσα από την τέχνη της, επαναδιεκδικεί την υφαντική ως μια πράξη αφήγησης, προσκαλώντας μας να επανεξετάσουμε έννοιες όπως το οικείο, το κληρονομημένο, το άρρητο και το λησμονημένο.">
+                Read bio
+            </button>
+        </div>
+        <div class="artist-card card">
+            <img src="styles/assets/artists/artist2.png">
+            <h2 class="what-name">Antigoni Vafeiadi</h2> 
+            <h2 class="what-job">Artist</h2>             
+            <button class="blur-btn" data-who="Gallery" data-bio="Στην έκθεση «Έρως και Ψυχή», η Αντιγόνη Βαφειάδη δημιουργεί μια βιωματική διαδρομή μεταμόρφωσης μέσα από βιομορφικά κουκούλια από μετάξι και φυσικές βαφές. Τα έργα της λειτουργούν ως γέφυρα ανάμεσα στο σκοτάδι και το φως, την επιθυμία και την πληρότητα, προτείνοντας μια συνύπαρξη ύλης και πνεύματος που προκαλεί τον θεατή να αναμετρηθεί με τις δικές του εσωτερικές αλλαγές.">
+                Read bio
+            </button>
+        </div>
+        <div class="artist-card card">
+            <img src="styles/assets/artists/artist3.png">
+            <h2 class="what-name">Lena Dourmousoglou</h2> 
+            <h2 class="what-job">Visual Artist</h2>             
+            <button class="blur-btn" data-who="Gallery" data-bio="Η Λένα Δουρμούσογλου είναι εικαστικός με επίκεντρο την ζωγραφική και την υλικότητα του ξύλου. Έργα από τη σειρά της «PTYCHOSEIS» εξερευνούν τη σχέση ανάμεσα στην ύλη και το νόημα. Επικεντρώνονται στη στιγμή όπου το ορατό μετατρέπεται σε αίσθηση και η ζωγραφική επιφάνεια παύει να λειτουργεί μόνο ως εικόνα, αποκτώντας μια πιο βιωματική και συμβολική διάσταση.">
+                Read bio
+            </button>
+        </div>
+        <div class="artist-card card">
+            <img src="styles/assets/artists/artist4.png">
+            <h2 class="what-name">Sophia Chantal Zafiropoulos</h2> 
+            <h2 class="what-job">Artist</h2>             
+            <button class="blur-btn" data-who="Gallery" data-bio="Η Sophia Chantal Zarifopoulos, η «Balkan Princess» του ελληνικού design, φέρνει στη gallery τη συλλογή που της χάρισε το βραβείο Best New Designer στο Athens Fashion Week. Με οδηγό το upcycling, μεταμορφώνει vintage σεμεδάκια και παραδοσιακά μαντιλάκια σε σύγχρονα ενδύματα γεμάτα κίνηση, εμπνευσμένα από τον βαλκανικό μαξιμαλισμό. Μέσα από το δημιουργικό παιχνίδι και το ρίσκο, η σχεδιάστρια μας καλεί να αγκαλιάσουμε την ελευθερία της έκφρασης και να δώσουμε νέα ζωή στο αυθεντικό και το ξεχασμένο.">
+                Read bio
+            </button>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="top-footer">
+            <div class="footer-left">
+                <h3 id="typewriter"></h3>
+                <script src="js/typewriter.js"></script>
+            </div>
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/profile.php?id=100064622322785" target="_blank"
+                        class="social-icon">
+                        <i class="fab fa-facebook-f"></i> <!-- Facebook Icon -->
+                    </a>
+                    <a href="https://www.instagram.com/tedxaueb/" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
+                    </a>
+                    <a href="https://www.youtube.com/@TEDxAUEB" target="_blank" class="social-icon">
+                        <i class="fab fa-youtube"></i> <!-- YouTube Icon -->
+                    </a>
+                    <a href="https://www.tiktok.com/@tedxaueb" target="_blank" class="social-icon">
+                        <i class="fab fa-tiktok"></i> <!-- TikTok Icon -->
+                    </a>
+                    <a href="https://www.linkedin.com/company/tedxaueb/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i> <!-- LinkedIn Icon -->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <a target="_blank" href="https://tedxaueb.org/">
+                <img class="footer-logo" src="styles/logo/TEDxAUEB_Logo.png" alt="TEDxAUEB Logo"
+                    style="display: block;">
+            </a>
+            <div class="footer-text">
+                <p>Copyright © 2012-2026 TEDxAUEB, All Rights Reserved | This independent TEDx event is operated under
+                    license from TED</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="custom-cursor" id="customCursor"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="js/gradient.js"></script>
+    <script src="js/fill-text.js"></script>
+    <script src="js/trailer.js"></script>
+    <script src="js/calendar-btn.js"></script>
+    <script src="js/blob.js"></script>
+    <script src="js/pop-up.js"></script>
+
+    <script>
+        const toggleLinks = document.querySelectorAll(".toggle-bio");
+
+        toggleLinks.forEach(link => {
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                
+                const speakerCard = link.closest(".speaker-card");
+                speakerCard.classList.toggle("active");
+
+                if (speakerCard.classList.contains("active")) {
+                    link.textContent = "Close Bio";
+                } else {
+                    link.textContent = "Read Bio";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

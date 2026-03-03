@@ -1,0 +1,260 @@
+@import url('assets/fonts/GFS_Bodoni/gfs-bodoni.css');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    --pink: #d2bdca;
+    --light-blue: #8da7cc;
+    --dark-blue: #364466;
+    --yellow: #f4d792;
+    --green: #40737a;
+    --brown: #725348;
+    --gfs-bodoni-font: 'GFS Bodoni', arial;
+    --manrope-font: "Manrope", arial;
+    --inter-font: "Inter", arial;
+}
+
+* {
+    /* cursor: url(images/hand-cursor.png), auto; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--gfs-bodoni-font);
+    background-color: var(--pink);
+    color: var(--dark-blue);
+    margin: 0;
+    background-image: url(assets/backgrounds/pink-wide.png);
+    background-attachment: fixed;
+}
+
+.head,
+footer {
+    font-family: var(--manrope-font);
+}
+
+.hero {
+    padding: 50px 50px 0px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 50px;
+}
+
+.hero h2 {
+    font-size: calc(24px + 1vw);
+    text-align: center;
+    font-weight: bold;
+}
+
+.hero-logo {
+    max-width: 70%;
+    max-height: 60vh;
+}
+
+.hero-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flower {
+    max-height: 100px;
+}
+
+.amalthea-desc {
+    padding: 0 10% 50px;
+    text-align: center;
+}
+
+.amalthea-desc h3 {
+    font-size: calc(22px + 1vw);
+}
+
+.speakers-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.speakers {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.speakers-title {
+    text-align: center;
+    font-size: 3em;
+    color: #364466;
+}
+
+.speakers-desc {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.speakers-img {
+    width: 100%;
+}
+
+.speaker-bio {
+    background-color: var(--dark-blue);
+    color: var(--pink);
+    padding: 10px;
+    position: relative;
+}
+
+.speaker-bio p {
+    margin: 0;
+    z-index: 20;
+    position: relative;
+}
+
+.bio {
+    display: none;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-blue);
+    color: var(--pink);
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.show-bio {
+    display: block;
+}
+
+.view-bio {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card-title {
+    position: absolute;
+    bottom: 50px;
+    color: #f4d792;
+    font-size: calc(30px + 1vw);
+    padding: 10px;
+    margin: 0;
+}
+
+.booths {
+    text-align: center;
+}
+
+#program-table {
+    border-spacing: 15px;
+}
+
+#program-table .table-title {
+    border-bottom: #364466 2px solid;
+    padding-top: 30px;
+    text-align: left;
+    font-size: calc(20px + 1vw);
+}
+
+#program-table .table-content {
+    font-size: calc(16px + 0.8vw);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+#program-table .table-time {
+    font-size: calc(12px + 0.5vw);
+    border-right: #364466 1px solid;
+    padding-right: 15px;
+    width: 20%;
+}
+
+#program-table .table-in-brakets {
+    font-weight: 400;
+    font-size: calc(12px + 0.5vw);
+}
+
+#program-table .brown {
+    color: #725348;
+    border-color: #725348;
+}
+
+#program-table td {
+    vertical-align: top;
+}
+
+@media (min-width: 1170px) {
+    .speakers-desc {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1169px) {
+    .speakers-desc {
+        width: 50%;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 799px) {
+    .bio {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 649px) {
+    .speakers-desc {
+        width: 100%;
+    }
+}
+
+.sponsors {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--light-gray);
+}
+
+.sponsors h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sponsor-category {
+    margin-bottom: 100px;
+}
+
+.sponsor-category h3 {
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.sponsor-logos img {
+    max-height: 150px;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.sponsor-logos img:hover {
+    transform: scale(1.1);
+}
+

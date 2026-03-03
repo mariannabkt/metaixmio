@@ -1,0 +1,266 @@
+/* General Styles */
+
+.main-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: none;
+    transition: opacity 0.3s ease, backdrop-filter 0.3s ease;
+    z-index: 1003;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 4%;
+    box-sizing: border-box;
+}
+
+.head.scrolled {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+}
+
+.logo {
+    height: 25px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    justify-content: space-between;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.hamburger .bar1, .hamburger .bar3 {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.open .bar1 {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.hamburger.open .bar2 {
+    opacity: 0;
+}
+
+.hamburger.open .bar3 {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+}
+
+/* Overlay Menu */
+.overlay-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially hidden off-screen */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+    z-index: 1002;
+    backdrop-filter: blur(8px); 
+}
+
+.overlay-menu.active {
+    right: 0;
+}
+
+.overlay-header {
+    width: 100%;
+    text-align: right;
+}
+
+.close-btn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Overlay Navigation */
+.overlay-nav ul {
+    list-style: none;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.overlay-nav li {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.overlay-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.overlay-nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 1000px) {
+    .menu {
+        display: none; 
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .overlay-menu.active {
+        background-color: rgba(0, 0, 0, 0.9); 
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 25px; 
+    }
+
+    .head {
+        padding: 2% 4%;
+    }
+}
+
+footer {
+    position: relative;
+    z-index: 1000;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-width: 0;
+    background-color: #000000;
+    color: #ffffff;
+    gap: 15px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#typewriter {
+    font-size: 1.8rem;
+    min-height: 125px;
+}
+
+.footer-right {
+    display: flex;
+}    
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 30px 50px 10px;
+    position: relative;
+    z-index: 50;
+}
+
+.footer-logo {
+    max-width: 150px; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-text p {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.social-icon {
+    padding: 11px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #eb0028;
+}
+
+.social-icon:hover {
+    background-color: #ffffff;
+    color: #eb0028;
+}
+
+/* Ensure responsive layout */
+@media (max-width: 668px) {
+    .top-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left {
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .footer-text p {
+        text-align: center;
+    }
+}
+    
