@@ -23,22 +23,22 @@ let tl = gsap.timeline({
   scrollTrigger: {
     trigger: diagonal_section,
     start: "top top",
-    end: "+=1000",
-    scrub: true,
-    pin: true
+    end: () => "+=" + diagonal_section.offsetWidth, 
+    pin: true,
+    scrub: true
   }
 });
 
 // Move "\" shape to center
 tl.to(diagonal_shape, {
-  x: "60vw",
-  ease: "none",
-  duration: 1
+  x: "95vw",
+  ease: "power1.inOut",
+  duration: 2
 });
 
 // Reveal image inside
 tl.to(inside, {
-  x: "30%",
-  ease: "none",
-  duration: 1
+  x: "20%",
+  ease: "power1.inOut",
+  duration: 2
 });
